@@ -47,7 +47,7 @@
     box-sizing: border-box;
 }
 
-.first-section-text , .navbar , #bottom-container{
+.first-section-text , .navbar{
     background-color: #7d796e !important;
 }
 
@@ -99,6 +99,10 @@
     aspect-ratio: 1/1;
 }
 
+.repair-text{
+    color: #4ec990 !important;
+}
+
 .service-list{
     list-style-type: disclosure-closed;
 }
@@ -106,7 +110,8 @@
 /* Bottom Part */
 
 #bottom-container {
-    color: white;
+    background-color: #262626 !important;
+    color: #AAB6B6;
     display: flex;
     padding: 30px;
     height: 300px;
@@ -127,12 +132,16 @@
 }
 
 .bottom-button {
-    color: var(--bs-white) !important;
+    color: #AAB6B6 !important;
     text-align: left !important;
 }
 
 .bottom-button:hover {
     color: var(--bs-black) !important;
+}
+
+.bottom-logo{
+    width: 1.5rem;
 }
 
 #bottom-title {

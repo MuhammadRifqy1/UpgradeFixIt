@@ -4,14 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    <meta name="description" content="This is a landing page for showcase purposes only. This page was far from legitimate. If you want to contact the dev, send it to muhammadrifqy222@gmail.com.">
+    <meta http-equiv="Cache-control" content="max-age=604800">
+    <link async href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./Landing-Home.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" media="print" onload="this.media='all'">
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./swiper.js"></script>
     <script src="./Landing-Home.js"></script>
     <title>Home Improvement</title>
@@ -46,8 +48,8 @@
                 <h1 class="mb-2">Hi, Welcome To <b class="LogoBase text-decoration-underline text-bg-dark text-white badge px-e">Upgrade<b class="text-success">FixIt</b></b></h1>
                 <h2 class="text-center mb-3 header-caption">Choose One Of These Options</h2>
                 <div class="d-flex justify-content-evenly">
-                    <a class="btn btn-success btn-lg" data-scroll="#servicePart">Renovate</a>
-                    <a class="btn btn-warning btn-lg" data-scroll="#servicePart">Repairment</a>
+                    <a class="btn btn-success btn-lg" data-scroll="#servicePart" href="#" aria-label="Renov Redirect">Renovate</a>
+                    <a class="btn btn-warning btn-lg" data-scroll="#servicePart" href="#" aria-label="Repair Redirect">Repairment</a>
                 </div>
             </div>
 
@@ -94,7 +96,7 @@
 
             <section class="WeDoSection py-5">
                 <h3 class="text-center text-white fs-1"><b>What Can We Do ?</b></h3>
-                <h5 class="text-center text-white fs-2 mb-4">We Can :</h5>
+                <h4 class="text-center text-white fs-2 mb-4">We Can :</h4>
                     <div class="d-grid WeDoContent justify-items-center">
 
                         <div class="col-10 border border-black rounded-3">
@@ -150,7 +152,7 @@
                     <div class="card service-card col-4">
                         <div class="card-body text-center text-bg-dark text-warning rounded-top-1">
                             <h3 class="fw-bold fs-1">Renovation</h3>
-                            <h5 class="fs-3">We Renovate : </h5>
+                            <h4 class="fs-3">We Renovate : </h4>
                             <ul class="text-start service-list fs-5 py-3">
                                 <li>Wall Paints</li>
                                 <li>Floor</li>
@@ -162,14 +164,14 @@
                             <h5 class="fs-3">And More !</h5>
                         </div>
                         <div class="card-footer text-bg-dark border-top-0 d-flex justify-content-center pb-3">
-                            <button class="btn btn-warning btn-lg">Choose Service</button>
+                            <button class="btn btn-warning btn-lg" aria-label="Renovate Choose">Choose Service</button>
                         </div>
                     </div>
 
                     <div class="card service-card col-4">
-                        <div class="card-body text-center text-bg-dark text-success rounded-top-1">
+                        <div class="card-body text-center text-bg-dark repair-text rounded-top-1">
                             <h3 class="fw-bold fs-1">Repairment</h3>
-                            <h5 class="fs-3">We Repair : </h5>
+                            <h4 class="fs-3">We Repair : </h4>
                             <ul class="text-start service-list fs-5 py-3">
                                 <li>Doors</li>
                                 <li>Roof Tile</li>
@@ -181,7 +183,7 @@
                             <h5 class="fs-3">And More !</h5>
                         </div>
                         <div class="card-footer text-bg-dark border-top-0 d-flex justify-content-center pb-3">
-                            <button class="btn btn-success btn-lg">Choose Service</button>
+                            <button class="btn btn-success btn-lg" aria-label="Repair Choose">Choose Service</button>
                         </div>
                     </div>
 
@@ -197,16 +199,16 @@
                     <div class="bottom-text address">
                         <div class="my-1 px-1 rounded border border-white bg-black d-flex justify-content-center align-items-center col-5 fs-3"><b class="LogoBase text-decoration-underline text-white badge px-e">Upgrade<b class="text-success">FixIt</b></b></div>
                         <h6 id="bottom-ads">Discover way to renovate your house - Ordering repairment from your internet!</h6>
-                        <h4 id="bottom-title" class="text-dark">Address</h4>
-                        <h6 id="bottom-list"><i>
-                        <svg class="col-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 73.825a182.177 182.177 0 0 0-182.179 182.18c0 100.6 81.563 182.17 182.179 182.17 100.61 0 182.18-81.57 182.18-182.17A182.182 182.182 0 0 0 256 73.825zm-50.703 258.39a4.725 4.725 0 0 1-6.619 4.332l-65.558-28.581a4.721 4.721 0 0 1-2.839-4.324V179.776a4.725 4.725 0 0 1 6.618-4.332l65.549 28.58a4.724 4.724 0 0 1 2.84 4.334v123.856zm89.146-28.573a4.727 4.727 0 0 1-2.83 4.324l-65.566 28.581a4.716 4.716 0 0 1-6.61-4.332V208.359a4.717 4.717 0 0 1 2.83-4.333l65.558-28.581a4.725 4.725 0 0 1 6.618 4.332zm89.166 28.573a4.725 4.725 0 0 1-6.618 4.332l-65.568-28.581a4.713 4.713 0 0 1-2.83-4.324V179.776a4.725 4.725 0 0 1 6.618-4.332l65.549 28.58a4.724 4.724 0 0 1 2.84 4.334v123.856z" data-name="Map"/>
+                        <h4 id="bottom-title" class="text-white">Address</h4>
+                        <h5 id="bottom-list" class="fs-6"><i>
+                        <svg class="bottom-logo mx-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 73.825a182.177 182.177 0 0 0-182.179 182.18c0 100.6 81.563 182.17 182.179 182.17 100.61 0 182.18-81.57 182.18-182.17A182.182 182.182 0 0 0 256 73.825zm-50.703 258.39a4.725 4.725 0 0 1-6.619 4.332l-65.558-28.581a4.721 4.721 0 0 1-2.839-4.324V179.776a4.725 4.725 0 0 1 6.618-4.332l65.549 28.58a4.724 4.724 0 0 1 2.84 4.334v123.856zm89.146-28.573a4.727 4.727 0 0 1-2.83 4.324l-65.566 28.581a4.716 4.716 0 0 1-6.61-4.332V208.359a4.717 4.717 0 0 1 2.83-4.333l65.558-28.581a4.725 4.725 0 0 1 6.618 4.332zm89.166 28.573a4.725 4.725 0 0 1-6.618 4.332l-65.568-28.581a4.713 4.713 0 0 1-2.83-4.324V179.776a4.725 4.725 0 0 1 6.618-4.332l65.549 28.58a4.724 4.724 0 0 1 2.84 4.334v123.856z" data-name="Map"/>
                         </svg></i> 075 Road Example , Province , Country</h6>
 
-                        <h6 id="bottom-list"><i>
-                        <svg class="mx-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" style="enable-background:new 0 0 128 128 ; width:1.5rem" xml:space="preserve"><path d="M48.3 64c0 8.7 7 15.7 15.7 15.7 1 0 1.8-.8 1.8-1.8s-.8-1.7-1.8-1.7c-6.7 0-12.2-5.5-12.2-12.2 0-3.3 1.3-6.5 3.7-8.8 2.4-2.3 5.6-3.5 8.9-3.4 6.6.4 11.8 5.9 11.7 12.5v5.1c0 1-.9 1.8-1.8 1.8-1 0-1.7-.8-1.8-1.8V64c0-4.8-3.8-8.6-8.6-8.6s-8.6 3.8-8.6 8.6 3.8 8.6 8.6 8.6c1.9 0 3.8-.6 5.3-1.8.7 2.8 3.6 4.5 6.5 3.8 2.3-.6 4-2.7 4-5.1v-5.1c0-8.5-6.6-15.6-15.1-16-8.7-.3-15.9 6.4-16.2 15.1-.1.1-.1.3-.1.5zM64 69.1c-2.8 0-5.1-2.3-5.1-5.1s2.3-5.1 5.1-5.1 5.1 2.3 5.1 5.1-2.3 5.1-5.1 5.1z"/><path d="M126.3 19.5H1.8c-1 0-1.8.8-1.8 1.8v85.5c0 1 .8 1.7 1.8 1.8h124.5c1 0 1.7-.8 1.8-1.8V21.3c-.1-1-.9-1.8-1.8-1.8zM85 64c0 11.6-9.4 21.1-21 21-11.6 0-21-9.4-21-21s9.4-21 21-21 21 9.4 21 21zm-46.3.8.8.4c.7 13.5 12.2 23.9 25.7 23.3 12.6-.6 22.6-10.7 23.3-23.3l.8-.4 33.2 40.2H5.5l33.2-40.2zM3.5 101.9V47.8l31.9 15.4-31.9 38.7zm89.1-38.7 31.9-15.4v54.1L92.6 63.2zM3.5 23h121v20.9L88.4 61.3c-1.5-13.5-13.5-23.2-27-21.7C50 40.8 40.9 49.9 39.7 61.3L3.5 43.9V23z"/>
+                        <h5 id="bottom-list" class="fs-6"><i>
+                        <svg class="bottom-logo mx-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" style="enable-background:new 0 0 128 128" xml:space="preserve"><path d="M48.3 64c0 8.7 7 15.7 15.7 15.7 1 0 1.8-.8 1.8-1.8s-.8-1.7-1.8-1.7c-6.7 0-12.2-5.5-12.2-12.2 0-3.3 1.3-6.5 3.7-8.8 2.4-2.3 5.6-3.5 8.9-3.4 6.6.4 11.8 5.9 11.7 12.5v5.1c0 1-.9 1.8-1.8 1.8-1 0-1.7-.8-1.8-1.8V64c0-4.8-3.8-8.6-8.6-8.6s-8.6 3.8-8.6 8.6 3.8 8.6 8.6 8.6c1.9 0 3.8-.6 5.3-1.8.7 2.8 3.6 4.5 6.5 3.8 2.3-.6 4-2.7 4-5.1v-5.1c0-8.5-6.6-15.6-15.1-16-8.7-.3-15.9 6.4-16.2 15.1-.1.1-.1.3-.1.5zM64 69.1c-2.8 0-5.1-2.3-5.1-5.1s2.3-5.1 5.1-5.1 5.1 2.3 5.1 5.1-2.3 5.1-5.1 5.1z"/><path d="M126.3 19.5H1.8c-1 0-1.8.8-1.8 1.8v85.5c0 1 .8 1.7 1.8 1.8h124.5c1 0 1.7-.8 1.8-1.8V21.3c-.1-1-.9-1.8-1.8-1.8zM85 64c0 11.6-9.4 21.1-21 21-11.6 0-21-9.4-21-21s9.4-21 21-21 21 9.4 21 21zm-46.3.8.8.4c.7 13.5 12.2 23.9 25.7 23.3 12.6-.6 22.6-10.7 23.3-23.3l.8-.4 33.2 40.2H5.5l33.2-40.2zM3.5 101.9V47.8l31.9 15.4-31.9 38.7zm89.1-38.7 31.9-15.4v54.1L92.6 63.2zM3.5 23h121v20.9L88.4 61.3c-1.5-13.5-13.5-23.2-27-21.7C50 40.8 40.9 49.9 39.7 61.3L3.5 43.9V23z"/>
                         </svg></i> example@domain.com</h6>
 
-                        <h6 id="bottom-list"><i><svg class="mx-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512 ; width:1.5rem"
+                        <h5 id="bottom-list" class="fs-6"><i><svg class="bottom-logo mx-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512 "
                             xml:space="preserve">
                             <circle style="fill:#cb5151" cx="255.998" cy="255.998" r="247.824" />
                             <path style="fill:#1e252b"
@@ -223,31 +225,31 @@
                     </div>
             
                     <div class="bottom-text">
-                        <h4 id="bottom-title" class="text-dark">About Us</h4>
-                        <h6 id="bottom-list"><button type="button" class="btn p-0 bottom-button">About Us</button></h6>
-                        <h6 id="bottom-list"><button type="button" class="btn p-0 bottom-button">Contact Information</button></h6>
-                        <h6 id="bottom-list"><button type="button" class="btn p-0 bottom-button">Testimonials</button></h6>
-                        <h6 id="bottom-list"><button type="button" class="btn p-0 bottom-button">Support/Help Center</button></h6>
-                        <h6 id="bottom-list"><button type="button" class="btn p-0 bottom-button">Related Websites</button></h6>
+                        <h4 id="bottom-title" class="text-white">About Us</h4>
+                        <h5 id="bottom-list"><button type="button" aria-label="About Bottom" class="btn p-0 bottom-button">About Us</button></h6>
+                        <h5 id="bottom-list"><button type="button" aria-label="Contact Bottom" class="btn p-0 bottom-button">Contact Information</button></h6>
+                        <h5 id="bottom-list"><button type="button" aria-label="Testimonials Bottom" class="btn p-0 bottom-button">Testimonials</button></h6>
+                        <h5 id="bottom-list"><button type="button" aria-label="Support Bottom" class="btn p-0 bottom-button">Support/Help Center</button></h6>
+                        <h5 id="bottom-list"><button type="button" aria-label="Related Bottom" class="btn p-0 bottom-button">Related Websites</button></h6>
                     </div>
             
                     <div class="bottom-text">
-                        <h4 id="bottom-title" class="text-dark">Misc</h4>
-                        <h6 id="bottom-list"><button type="button" class="btn p-0 bottom-button">FAQ</button></h6>
-                        <h6 id="bottom-list"><button type="button" class="btn p-0 bottom-button">Terms of Service</button></h6>
-                        <h6 id="bottom-list"><button type="button" class="btn p-0 bottom-button">Privacy Policy</button></h6>
-                        <h6 id="bottom-list"><button type="button" class="btn p-0 bottom-button">Partners and Affiliates</button>
+                        <h4 id="bottom-title" class="text-white">Misc</h4>
+                        <h5 id="bottom-list"><button type="button" aria-label="FAQ Bottom" class="btn p-0 bottom-button">FAQ</button></h6>
+                        <h5 id="bottom-list"><button type="button" aria-label="TOS Bottom" class="btn p-0 bottom-button">Terms of Service</button></h6>
+                        <h5 id="bottom-list"><button type="button" aria-label="Privacy Bottom" class="btn p-0 bottom-button">Privacy Policy</button></h6>
+                        <h5 id="bottom-list"><button type="button" aria-label="Affiliates Bottom" class="btn p-0 bottom-button">Partners and Affiliates</button>
                         </h6>
-                        <h6 id="bottom-list"><button type="button" class="btn p-0 bottom-button">Copyright Information</button></h6>
+                        <h6 id="bottom-list"><button type="button" aria-label="Copyright Bottom" class="btn p-0 bottom-button">Copyright Information</button></h6>
                     </div>
             
                     <div class="bottom-text newsettler">
-                        <h4 id="bottom-title" class="text-dark">Newsettler</h4>
-                        <h6 id="bottom-list">Do You Want To Get Informed About Great Offering From Plantimart ? Put Your Email Here
+                        <h4 id="bottom-title" class="text-white">Newsettler</h4>
+                        <h5 id="bottom-list" class="fs-6">Do You Want To Get Informed About Great Offering From UpgradeFixIt ? Put Your Email Here
                             To Get News About It</h6>
                         <div class="input-group mb-3">
                             <input type="text" class="form-control" placeholder="Email Here" aria-label="Email Here">
-                            <button class="btn btn-secondary" type="button" id="button-addon2">
+                            <button class="btn btn-secondary" aria-label="Newsettler Bottom" type="button" id="button-addon2">
                                 <i> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" style="width:1.5rem">
                                     <defs>
                                         <style>
