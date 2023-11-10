@@ -36,6 +36,7 @@
 .swiper img {
     filter: brightness(0.2);
     width: 100%;
+    height: auto;
 }
 
 .swiper-slider  , .swiper-wrapper  , .swiper-container{
@@ -56,7 +57,8 @@
 }
 
 .first-section-img{
-    min-width : 45rem ;
+    width: 100%;
+    aspect-ratio: 1/1 ;
     filter: contrast(1.2);
 }
 
