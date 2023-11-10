@@ -56,7 +56,8 @@
 }
 
 .first-section-img{
-     filter: contrast(1.2);
+    width : 100% ;
+    filter: contrast(1.2);
 }
 
 .section-mask{
