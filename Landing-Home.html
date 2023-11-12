@@ -22,24 +22,23 @@
 </head>
 
 <body>
-    <nav class="navbar bg-gradient d-flex justify-content-center align-items-center" id="navbar">
+    <nav class="navbar bg-gradient d-flex justify-content-center align-items-center w-100 position-fixed" id="navbar">
         <div class="my-1 px-1 rounded border border-white bg-black d-flex justify-content-center align-items-center">
-            <b class="LogoBase text-decoration-underline text-white badge px-e">Upgrade<b class="text-success">FixIt</b></b>
+            <b class="LogoBase NavLogo text-decoration-underline badge px-e">Upgrade<b class="text-success">FixIt</b></b>
         </div>
     </nav>
 
-    <div data-bs-spy="scroll" data-bs-target="#navbar" class="scrollspy-container" tabindex="0">
         <header class="homeHeader d-flex flex-column justify-content-center align-items-center position-relative">
             <div class="swiper swiper-container mySwiper z-1" id="swiperContainer">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <img class="opacity-50 w-100 h-auto" src="./Stock Photo/Empty-Building2.webp?v=1.2" alt="Image 1">
+                        <img class="opacity-50 w-100 h-auto" id="FirstSlideImg" src="./Stock Photo/Empty-Building2.webp?v=1.2" alt="Image 1">
                     </div>
                     <div class="swiper-slide">
-                        <img class="opacity-50 w-100 h-auto" src="./Stock Photo/Empty-Building.webp?v=1.2" alt="Image 2">
+                        <img class="opacity-50 w-100 h-auto" id="SecondSlideImg" src="./Stock Photo/Empty-Building.webp?v=1.2" alt="Image 2">
                     </div>
                     <div class="swiper-slide">
-                        <img class="opacity-50 w-100 h-auto" src="./Stock Photo/Excavator.webp?v=1.2" alt="Image 3">
+                        <img class="opacity-50 w-100 h-auto" id="ThirdSlideImg" src="./Stock Photo/Excavator.webp?v=1.2" alt="Image 3">
                     </div>
                 </div>
             </div>
@@ -47,22 +46,22 @@
             <div class="header-mask position-absolute z-2"></div>
 
             <div class="position-absolute z-3">
-                <h1 class="mb-2">Hi, Welcome To <b class="LogoBase text-decoration-underline text-bg-dark text-white badge px-e">Upgrade<b class="text-success">FixIt</b></b></h1>
+                <h1 class="mb-2 text-center header-title">Hi, Welcome To <b class="LogoBase text-decoration-underline bg-dark badge px-e">Upgrade<b class="text-success">FixIt</b></b></h1>
                 <h2 class="text-center mb-3 header-caption">Choose One Of These Options</h2>
                 <div class="d-flex justify-content-evenly">
-                    <a class="btn btn-success btn-lg" data-scroll="#servicePart" href="#" aria-label="Renovate">Renovate</a>
-                    <a class="btn btn-warning btn-lg" data-scroll="#servicePart" href="#" aria-label="Repairment">Repairment</a>
+                    <a class="btn btn-success btn-lg d-flex align-items-center header-button px-2 py-1" data-scroll="#servicePart" href="#" aria-label="Renovate">Renovate</a>
+                    <a class="btn btn-warning btn-lg d-flex align-items-center header-button px-2 py-1" data-scroll="#servicePart" href="#" aria-label="Repairment">Repairment</a>
                 </div>
             </div>
 
         </header>
 
         <main>
-            <section class="d-flex">
+            <section class="d-flex first-section">
                 <div class="col-6 d-flex flex-column justify-content-center align-items-center first-section-text">
-                    <div class="col-11 d-flex flex-column justify-content-center align-items-center px-3 border border-black rounded-4 first-section-border bg-white">
-                        <h3 class="text-center fw-bold fs-1">About Us</h3>
-                        <caption><p class="first-section-caption fs-4">
+                    <div class="col-11 d-flex flex-column justify-content-center align-items-center px-2 px-sm-3 border border-black rounded-4 first-section-border bg-white">
+                        <h3 class="text-center fw-bold first-section-title">About Us</h3>
+                        <caption><p class="first-section-caption mb-sm-2 mb-0 col-12">
                             This is a dummy text . This website was just for demonstration purpose only . Don't take this website seriously . Most of the word in here was just for filler on the website.
                             If you want to contact the website dev , send it to muhammadrifqy222@gmail.com . Most of the word in this paragraph just for filler. There's no other thing in this part.
                             except the website dev gmail contact
@@ -72,7 +71,7 @@
                 <aside class="col-6">
                     
                     <div class="position-relative col-12">
-                        <img class="col-12 first-section-img w-100 h-auto" src="./Stock Photo/Paper-Writing.webp?v=1.1" alt="PaperPhoto">
+                        <img class="col-12 first-section-img w-100 h-auto" id="PaperWriting" src="./Stock Photo/Paper-Writing.webp?v=1.1" alt="PaperPhoto">
                         <div class="section-mask top-0 h-100 w-100 position-absolute z-2"></div>
                     </div>
                     
@@ -101,29 +100,26 @@
                 <h4 class="text-center text-white fs-2 mb-4">We Can :</h4>
                     <div class="d-grid WeDoContent justify-items-center">
 
-                        <div class="col-10 border border-black rounded-3">
-                            <img class="p-3 WeDoImg rounded-3 w-100 h-auto" src="./Stock Photo/Painting.webp?v=1.1" alt="Painting">
+                        <div class="col-10 rounded-3">
+                            <img class="p-3 WeDoImg rounded-3 w-100 h-auto" id="PaintingImg" src="./Stock Photo/Painting.webp?v=1.1" alt="Painting">
+                            <h4 class="text-white text-center pt-3">House Painting</h4>
                         </div>
 
-                        <div class="col-10 border border-black rounded-3">
-                            <img class="p-3 WeDoImg2 rounded-3 w-100 h-auto" src="./Stock Photo/Roof.webp?v=1.1" alt="Roof">
+                        <div class="col-10 rounded-3">
+                            <img class="p-3 WeDoImg2 rounded-3 w-100 h-auto" id="RoofImg" src="./Stock Photo/Roof.webp?v=1.1" alt="Roof">
+                            <h4 class="text-white text-center pt-3">Roof Repairment</h4>
                         </div>
 
-                        <div class="col-10 border border-black rounded-3">
-                            <img class="p-3 WeDoImg3 rounded-3 w-100 h-auto" src="./Stock Photo/Home Deco.webp?v=1.1" alt="Deco">
+                        <div class="col-10 rounded-3">
+                            <img class="p-3 WeDoImg3 rounded-3 w-100 h-auto" id="DecoImg" src="./Stock Photo/Home Deco.webp?v=1.1" alt="Deco">
+                            <h4 class="text-white text-center pt-3">Home Deco</h4>
                         </div>
 
-                        <div class="col-10 border border-black rounded-3">
-                            <img class="p-3 WeDoImg4 rounded-3 w-100 h-auto" src="./Stock Photo/Floor.webp?v=1.1" alt="Floor">
+                        <div class="col-10 rounded-3">
+                            <img class="p-3 WeDoImg4 rounded-3 w-100 h-auto" id="FloorImg" src="./Stock Photo/Floor.webp?v=1.1" alt="Floor">
+                            <h4 class="text-white text-center pt-3">Tile Replacement</h4>
                         </div>
 
-                    </div>
-
-                    <div class="d-grid WeDoText justify-items-center mt-3">
-                        <h4 class="text-white">House Painting</h4>
-                        <h4 class="text-white">Roof Repairment</h4>
-                        <h4 class="text-white">Home Deco</h4>
-                        <h4 class="text-white">Tile Replacement</h4>
                     </div>
 
                 <h3 class="text-center text-white fs-1 mb-0 mt-3 fw-bold">And Many More !</h3>
@@ -149,9 +145,9 @@
             <section class="Select-section pb-5" id="servicePart">
                 <h3 class="text-center fw-bold py-5 fs-1">Service Selection</h3>
 
-                <div class="d-flex justify-content-evenly">
+                <div class="d-flex justify-content-evenly service-card-container align-items-center">
                     
-                    <div class="card service-card col-4">
+                    <div class="card service-card col-sm-4 col-11">
                         <div class="card-body text-center bg-dark text-warning rounded-top-1">
                             <h3 class="fw-bold fs-1">Renovation</h3>
                             <h4 class="fs-3">We Renovate : </h4>
@@ -170,7 +166,7 @@
                         </div>
                     </div>
 
-                    <div class="card service-card col-4">
+                    <div class="card service-card col-sm-4 col-11">
                         <div class="card-body text-center bg-dark repair-text rounded-top-1">
                             <h3 class="fw-bold fs-1">Repairment</h3>
                             <h4 class="fs-3">We Repair : </h4>
@@ -199,7 +195,7 @@
                 <div id="bottom-container" class="bottom-container d-flex">
             
                     <div class="bottom-text address">
-                        <div class="my-1 px-1 rounded border border-white bg-black d-flex justify-content-center align-items-center col-5 fs-3"><b class="LogoBase text-decoration-underline text-white badge px-e">Upgrade<b class="text-success">FixIt</b></b></div>
+                        <div class="my-1 px-1 rounded border border-white bg-black d-flex justify-content-center align-items-center fs-3"><b class="LogoBase text-decoration-underline badge px-e">Upgrade<b class="text-success">FixIt</b></b></div>
                         <h6 id="bottom-ads">Discover way to renovate your house - Ordering repairment from your internet!</h6>
                         <h4 id="bottom-title" class="text-white">Address</h4>
                         <h5 id="bottom-list" class="fs-6"><i>
@@ -277,8 +273,6 @@
                 </div>
             </div>
         </footer>
-
-    </div>
     
 </body>
 
