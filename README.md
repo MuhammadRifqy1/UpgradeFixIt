@@ -11,3 +11,7 @@ Adjustment for faster loading
 V1.2
 
 Label Editing For Better Accessibility
+
+V1.37
+
+Making The Web Responsive
