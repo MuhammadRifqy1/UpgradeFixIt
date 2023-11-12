@@ -60,6 +60,7 @@ img{
 
 .first-section-border{
     height: 80%;
+    justify-content: center;
 }
 
 .first-section-img{
@@ -248,15 +249,15 @@ img{
     }
 
     .first-section-border{
-        height: 90%;
+        height: 95%;
     }
 
     .first-section-title {
-        font-size: 1.3rem;
+        font-size: 1.7rem;;
     }
 
     .first-section-caption {
-        font-size: 0.75rem;
+        font-size: 1.075rem;
     }
 
     .WeDoContent {
@@ -275,16 +276,34 @@ img{
 @media (max-width: 470px){
 
     .first-section-title {
-        font-size: 1.1rem;
+        font-size: 1.4rem;
     }
 
     .first-section-caption {
-        font-size: 0.6rem;
+        font-size: 1rem;
     }
 }
 
-@media (max-width: 370px){
+@media (max-width: 430px) {
+
     .first-section-caption {
-        font-size: 0.5rem;
+        font-size: 0.825rem;
+    }
+}
+
+@media (max-width: 360px){
+
+    .first-section-title {
+        font-size: 1rem;
+    }
+
+    .first-section-caption {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .first-section-border {
+        justify-content: flex-start;
     }
 }
